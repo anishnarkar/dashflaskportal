@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Users</title>
+</head>
+<body>
+<br><h2>Users You Added</h2><br>
+
+{% for table in tables %}
+            {{'Data Upload Details'}}
+            {{ table|safe }}
+{% endfor %}
+
+<br><h3> Re-Enter User Name To Delete </h3><br>
+<form method='post'>
+        <form method="POST">
+    	Enter user name:<br>
+        <input name="user_name"><br>
+        Re-enter user name:<br>
+        <input name="reenter_user_name"><br>
+        <input type="submit" name="submit_button" value="Delete"><br>
+
+
+</form>
+<form method='post'>
+        <br><input type="submit" name="submit_button" value="Homepage">
+        
+      </form>
+      
+      
+</body>
+</html>

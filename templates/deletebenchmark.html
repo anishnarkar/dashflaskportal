@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Benchmarks</title>
+</head>
+<body>
+
+{% for table in tables %}
+            {{'Benchmarks'}}
+            {{ table|safe }}
+{% endfor %}
+
+<form method='post'>
+        
+        <input type="submit" name="submit_button" value="Homepage">
+      </form>
+      
+      
+<form action="" method='post'> 
+<h3>Enter Benchmark Upload Id which you want to delete</h3>
+<select name= 'choice' method="POST">
+    {% for colour in colours %}
+    <option value= "{{colour}}" SELECTED>{{colour}}</option>"
+    {% endfor %}
+</select>
+      <input type="submit" name="submit_button" value="Delete">
+</form>
+      
+</body>
+</html>

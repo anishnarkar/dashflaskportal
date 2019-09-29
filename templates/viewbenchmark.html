@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Benchmark</title>
+</head>
+<body>
+
+{% for table in tables %}
+            {{'Benchmark Details'}}
+            {{ table|safe }}
+{% endfor %}
+
+<form method='post'>
+<input type="submit" name="submit_button" value="Homepage">
+</form>
+      
+      
+      
+</body>
+</html>
